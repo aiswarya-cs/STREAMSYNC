@@ -1,7 +1,7 @@
 import React from 'react'
 
 const VideoCard = ({ info }) => {
-    // console.log(info);
+    //console.log(info);
     const { snippet, statistics } = info;
     const { channelTitle, title, thumbnails } = snippet;
   
@@ -12,7 +12,7 @@ const VideoCard = ({ info }) => {
         <ul>
           <li className='font-bold py-1 text-sm'>{title}</li>
           <li className='text-gray-500'>{channelTitle}</li>
-          <li>{statistics.viewCount} views</li>
+          <li>{statistics.viewCount.slice(0,2)}K views</li>
         </ul>
       </div>
     );
