@@ -6,7 +6,7 @@ const ChatMessage = ({name, message}) => {
     <div >
         <div className='flex p-3 items-center mx-2'>
         <IoIosContact className='text-2xl'/>
-        <span className='px-2 font-bold'>{name}</span>
+        <span className='px-3 font-bold text-red-950'>{name}</span>
         <span >{message}</span>
         </div>
 
