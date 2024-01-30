@@ -75,9 +75,9 @@ const Trend=[
         <hr/>
         <h1 className='font-bold text-xl'>Explore</h1>
         <ul className='p-2 leading-7'>
-        {Trend.map((i)=>{
+        {Trend.map((i,index)=>{
           return(
-            <li className='flex items-center text-black text-lg py-2 font-medium hover:w-44 hover:h-9 hover:bg-slate-100 rounded-lg'>
+            <li key={index} className='flex items-center text-black text-lg py-2 font-medium hover:w-44 hover:h-9 hover:bg-slate-100 rounded-lg'>
                <span className='mr-3 text-2xl'>{i.icons}</span>
                 {i.name}</li>
           )

@@ -21,7 +21,7 @@ const Header = () => {
   const [listSearch, setlistSearch] = useState([YOUTUBE_VIDEOS_API]);
   //API call
   useEffect(() => {
-    console.log(searchQuery);
+    // console.log(searchQuery);
    
   }, [searchQuery]);
 
